@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="thumb">
+        <li onmouseover="changeImageSrc('orange.png')">
+          <img src="./orange.png" alt="" />
+        </li>
+        <li onmouseover="changeImageSrc('black.png')">
+          <img src="./black.png" alt="" />
+        </li>
+        <li onmouseover="changeImageSrc('white.png')">
+          <img src="./white.png" alt="" />
+        </li>
+      </ul>
+      <div class="imgBox">
+        <h2>کتونی خفن</h2>
+        <img class="bigShoe" src="./orange.png" alt="" />
+        <ul class="size">
+          <span>Size</span>
+          <li>36</li>
+          <li>37</li>
+          <li>38</li>
+          <li>39</li>
+        </ul>
+        <a href="#" class="btn">افزودن به سبد خرید</a>
+      </div>
+    </div>
+    <script>
+      function changeImageSrc(sth) {
+        document.querySelector(".bigShoe").src = sth;
+      }
+    </script>
+  </body>
+</html>
